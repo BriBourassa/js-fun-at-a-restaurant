@@ -10,18 +10,22 @@ var {
   createRecipe
 } = require("../src/meal");
 
+//-----------------------------------
+
 describe("meal.js", function() {
   describe("nameMenuItem", function() {
     it("should be a function", function() {
      assert.isFunction(nameMenuItem);
     });
 
-    it.skip("should take in a name and make a delicious name", function () {
+    it("should take in a name and make a delicious name", function () {
       var menuItemName = nameMenuItem("Pizza");
       assert.equal(menuItemName, "Delicious Pizza");
     });
 
-    it.skip("should be able to create many delicious titles", function () {
+//------------------------------------
+
+    it("should be able to create many delicious titles", function () {
       var burritoItem = nameMenuItem("Burrito");
       var sushiItem = nameMenuItem("Pizza");
       var tacoItem = nameMenuItem("Taco");
@@ -32,12 +36,14 @@ describe("meal.js", function() {
     });
   });
 
+//----------------------------------------
+
   describe("createMenuItem", function() {
     it.skip("should be a function", function () {
       assert.isFunction(createMenuItem);
     });
 
-    it.skip("should create a menu item object", function() {
+    it("should create a menu item object", function() {
       var menuItemName = nameMenuItem("French Toast");
       var menuItem = createMenuItem(menuItemName, 10.99, "breakfast");
 
@@ -47,12 +53,14 @@ describe("meal.js", function() {
     });
   });
 
+//--------------------------------------------
+
   describe("addIngredients", function() {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(addIngredients);
     });
 
-    it.skip("should be able to add ingredients to an array", function() {
+    it("should be able to add ingredients to an array", function() {
       var ingredients = [];
 
       addIngredients("cheese", ingredients);

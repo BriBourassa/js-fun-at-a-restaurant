@@ -67,9 +67,9 @@ var shouldOrderMore = true;
 
 var stockCount = 1;
 if (inStock >= 1){
-  console.log("I'm going to eat some [food]")
+  console.log(`I'm going to eat some ${food}`)
 } else {
-  console.log('We need to get some more [food]')
+  console.log(`We need to get some more ${food}`)
 }
 
 
@@ -80,10 +80,10 @@ if (inStock >= 1){
 
 console.log(isFavorite);
 
-if (isFavorite = true){
-  console.log("My favorite food is [food]!")
+if (isFavorite === true){
+  console.log(`My favorite food is ${food}!`)
 } else {
-  console.log("I recently ate [food].")
+  console.log(`I recently ate ${food}.`)
 }
 
 //------------------------- Arrays -------------------------//
@@ -115,7 +115,7 @@ console.log(fruits[4]);
 // the value for isOpen should be true. Which other key value pairs would make sense to add to this object?
 
 var groceryStore = {
-  name: 'King Sooper'
+  name: 'King Sooper',
   isOpen: true
 }
 
