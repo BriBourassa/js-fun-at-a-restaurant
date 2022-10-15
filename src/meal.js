@@ -37,9 +37,9 @@ return `$${price}`
 
 //---------------------------------------
 
-function decreasePrice(menuItem){
+function decreasePrice(price){
 // console.log(menuItem.price * .9)
-return menuItem.price * .9
+return price * .9
 };
 
 //---------------------------------------
